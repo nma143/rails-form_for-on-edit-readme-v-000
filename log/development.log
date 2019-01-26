@@ -863,3 +863,11 @@ Processing by PostsController#update as HTML
   [1m[36m (77.1ms)[0m  [1mcommit transaction[0m
 Redirected to http://67.205.152.27:50614/posts/1
 Completed 302 Found in 84ms (ActiveRecord: 77.8ms)
+
+
+Started GET "/posts/1" for 50.100.146.204 at 2019-01-26 20:59:46 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.1ms)
